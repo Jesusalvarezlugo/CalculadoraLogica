@@ -21,6 +21,7 @@ namespace CalculadoraLogica
         {
             string expresion1="", expresion2="";
             MenuInterfaz mi = new MenuImplementacion();
+            operacionesInterfaz oi = new operacionesImplementacion();
 
             int opcionSeleccionada;
 
@@ -33,8 +34,8 @@ namespace CalculadoraLogica
 
                 if (opcionSeleccionada!=0)
                 {
-                    expresion1 = mi.pedirExpresion();
-                    expresion2 = mi.pedirExpresion();
+                    expresion1 = oi.pedirExpresion();
+                    expresion2 = oi.pedirExpresion();
                 }
                 
                                    
@@ -51,13 +52,13 @@ namespace CalculadoraLogica
                         case 1:
 
                             Console.WriteLine("[INFO] Se ejecutara la opcion Igualdad");
-                            mi.Igualdad(expresion1, expresion2);
+                            oi.Igualdad(expresion1, expresion2);
                             break;
 
                         case 2:
 
                             Console.WriteLine("[INFO] se ejecutara la opcion Desigualdad");
-                            mi.Desigualdad(expresion1, expresion2);
+                            oi.Desigualdad(expresion1, expresion2);
                             break;
 
                         default:
