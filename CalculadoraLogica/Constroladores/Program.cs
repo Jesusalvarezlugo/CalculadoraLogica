@@ -2,12 +2,24 @@
 using System.ComponentModel.Design;
 
 namespace CalculadoraLogica
+
+    ///<summary>
+    ///Clase que controla el flujo de la aplicacion
+    ///17102023- jal
+    /// </summary>
+
 {
     class Program
+
+        ///<summary>
+        ///clase desde donde iniciaremos la aplicacion
+        ///17102023- jal
+        /// </summary>
+
     {
         internal static void Main(string[] args)
         {
-            string expresion1=" ", expresion2=" ";
+            string expresion1="", expresion2="";
             MenuInterfaz mi = new MenuImplementacion();
 
             int opcionSeleccionada;
